@@ -9,7 +9,15 @@ $(document).ready(function() {
                         $("#container").append("<img src=\"" + value.url + "\"/>");
                     });
                 }
-                else {
+            });
+        });
+    });
+
+    $("#pdf-btn").click(function() {
+        $("#container").empty();
+        $.getJSON("pics.json", function(data) {
+            $.each(data, function(key, val) {
+                if(key === "pdfs") {
                     $.each(val, function(index, value) {
                         $("#container").append("<a href=\"" + value.url + "\">PDF " + (index+1) + "</a>");
                     });

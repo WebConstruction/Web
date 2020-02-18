@@ -10,3 +10,16 @@ h1 {
 div {
   background-color: #d5f4e6;
 }
+
+#btn-container {
+  text-align: center;
+}
+
+#btn-container button {
+  display: inline-block;
+}
+
+
+#pdf-btn {
+  margin-top: 25px;
+}
