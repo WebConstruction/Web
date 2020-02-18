@@ -30,7 +30,7 @@ body {
   display: inline-block;
 }
 
-a, a:link, a:active, a:focus, a:hover {
+#pdf-container a, #pdf-container a:link, #pdf-container a:active, #pdf-container a:focus, #pdf-container a:hover {
   text-decoration: none;
   color: white;
   display: inline-block;
