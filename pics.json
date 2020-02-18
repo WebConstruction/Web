@@ -2,6 +2,15 @@
     "pics": [
         {
             "url": "https://webconstruction.github.io/Web/images/img1.jpg"
+        },
+        {
+            "url": ""
+        }
+    ],
+
+    "pdfs": [
+        {
+            "url": "https://webconstruction.github.io/Web/pdfs/pt_guidelines_cm_dept.pdf"
         }
     ]
 }

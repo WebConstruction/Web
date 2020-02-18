@@ -4,9 +4,16 @@ $(document).ready(function() {
         $("#container").empty();
         $.getJSON("pics.json", function(data) {
             $.each(data, function(key, val) {
-                $.each(val, function(index, value) {
-                    $("#container").append("<img src=\"" + value.url + "\"/>");
-                });
+                if(key === "pics") {
+                    $.each(val, function(index, value) {
+                        $("#container").append("<img src=\"" + value.url + "\"/>");
+                    });
+                }
+                else {
+                    $.each(val, function(index, value) {
+                        $("#container").append("<a href=\"" + value.url + "\">PDF " + (index+1) + "</a>");
+                    });
+                }
             });
         });
     });
