@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $("#jsstyle").click(function() {
-        $("#container").empty();
+        $("#img-container").empty();
         $.getJSON("pics.json", function(data) {
             $.each(data, function(key, val) {
                 if(key === "pics") {
@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 
     $("#pdf-btn").click(function() {
-        $("#container").empty();
+        $("#pdf-container").empty();
         $.getJSON("pics.json", function(data) {
             $.each(data, function(key, val) {
                 if(key === "pdfs") {
