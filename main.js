@@ -6,7 +6,7 @@ $(document).ready(function() {
             $.each(data, function(key, val) {
                 if(key === "pics") {
                     $.each(val, function(index, value) {
-                        $("#container").append("<img src=\"" + value.url + "\"/>");
+                        $("#img-container").append("<img src=\"" + value.url + "\"/>");
                     });
                 }
             });
@@ -19,7 +19,7 @@ $(document).ready(function() {
             $.each(data, function(key, val) {
                 if(key === "pdfs") {
                     $.each(val, function(index, value) {
-                        $("#container").append("<a href=\"" + value.url + "\">PDF " + (index+1) + "</a>");
+                        $("#pdf-container").append("<a href=\"" + value.url + "\">PDF " + (index+1) + "</a>");
                     });
                 }
             });
