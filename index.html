@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1 align="center"> Name of Web</h1>
-<meta charset=utf-8 />
-<title>Display a random image.</title>
-<style type="text/css">
-body {margin-top: 30px;}
-#container img {
-    display: inline-block;
-    margin: 10px;
+  <title>Web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color:gray;
+  color: white;
 }
 h1 {
             text-align: center;
@@ -18,23 +32,28 @@ h1 {
         }
 body {
     background-color:silver;
-}   
-</style> 
-<script src="index.js"></script>
-<script src="style.css"></script>
-</head>
+}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
+  <script src="main.js"></script>
+</head>
 <body>
-    <center>
-<div id="container">
-<button id="jsstyle" 
-onclick="display_random_image();">Show Image</button>
-<a href="#test" id="test" style="color: rgba(0,0,0,0"></a>
+
+<h1>Name of the web</h1>
+
+<div class="vertical-menu">
+  <a href="#" class="active">Home</a>
+  <a href="home.html">OBJECT-1</a>
+  <a href="index.html">OBJECT-2</a>
+  <a href="index.html">OBJECT-3</a>
 </div>
 
-<br>
-<br>
-<button type=submit class="btn btn-danger" onclick=" window.open('pt_guidelines_cm_dept.pdf'); return true;"> PDF </button>
-</center>
+<div id="container">
+  
+</div>
 </body>
 </html>
