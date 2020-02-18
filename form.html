@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+
+<head>
+    <title>Capstone Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <font size="20" color="black"><b>Kennesaw State University:<br>
+             College of Computing and Software Engineering</b></font>
+    </center>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+            background-image: url("Preview image copy.jpg");
+            background-position: right top;
+            height: 400px
+        }
+        
+        p.date {
+            text-align: right;
+        }
+        
+        p.main {
+            text-align: justify;
+        }
+        
+        li a:hover {
+            background-color: #555;
+            color: black;
+        }
+    </style>
+
+</body>
+
+<body>
+
+    <h1>
+        <p>
+            <center>
+                <a href="https://ccse.kennesaw.edu/it/ "><img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_black.png?v=1"> </a>
+            </center>
+        </p>
+    </h1>
+
+    <script type="text/javascript">
+        function validate() {
+
+            if (document.myForm.FName.value == "") {
+                alert("Please provide your First Name");
+                document.myForm.FName.focus();
+                return false;
+            }
+
+            if (document.myForm.LName.value == "") {
+                alert("Please provide your Last Name");
+                document.myForm.LName.focus();
+                return false;
+            }
+
+            if (document.myForm.Email.value == "") {
+                alert("Please provide your Email");
+                document.myForm.Email.focus();
+                return false;
+            }
+
+            if (document.myForm.phone.value == "") {
+                alert("Please provide your Phone Number");
+                document.myForm.phone.focus();
+                return false;
+            }
+
+
+            if (document.myForm.Address.value == "") {
+                alert("Please provide your Address");
+                document.myForm.Address.focus();
+                return false;
+            }
+
+            if (document.myForm.City.value == "") {
+                alert("Please provide the name of the city ");
+                document.myForm.City.focus();
+                return false;
+            }
+
+
+            if (document.myForm.Zipcode.value == "" ||
+                isNaN(document.myForm.Zipcode.value) ||
+                document.myForm.Zipcode.value.length != 5) {
+                alert(document.myForm.Zipcode.value);
+                alert("Please provide the Zip Code in the format #####.");
+                document.myForm.Zipcode.focus();
+                return false;
+            }
+
+
+            if (document.myForm.State.value == "") {
+                alert("Please provide the name of the State");
+                document.myForm.State.focus();
+                return false;
+            }
+
+            if (document.myForm.GDate.value == "") {
+                alert("Please provide your Graduation Date");
+                document.myForm.GDate.focus();
+                return false;
+            }
+            if (document.myForm.gpa.value == "") {
+                alert("Please provide your GPA");
+                document.myForm.gpa.focus();
+                return false;
+            }
+
+            if (document.myForm.Signature.value == "") {
+                alert("Please provide your Signature");
+                document.myForm.Signature.focus();
+                return false;
+            }
+
+            if (document.myForm.Date.value == "") {
+                alert("Please provide the Signed Date");
+                document.myForm.Date.focus();
+                return false;
+            }
+
+        }
+    </script>
+
+    <div class="center">
+        <table cellpadding="10" width="100%" bgcolor="goldenrod" align="center" cellspacing="5" <tr>
+
+            <td colspan=2>
+
+                <h3 style="background-color:white">
+                    <center>
+                        <font size=4><b>Registration Form</b></h3>
+
+                </center>
+                </font>
+
+                <div style="text-align:left">
+
+
+
+                    <form action="user.info.display.php" method="POST" name="myForm" onsubmit="return(validate());">
+                        <table cellpadding="10" width="70%" bgcolor="goldenrod" align="center" cellspacing="5" <tr>
+                            <p>First Name <span style="color: #FF0000">*</span><input type="text" name="FName" size="25"> Last Name <span style="color: #FF0000">*</span><input type="text" name="LName" size="25"></p>
+                            <p>Gender <input type="checkbox" name="gender" value="female"> Female
+                                <input type="checkbox" name="gender" value="male" checked> Male
+                            </p>
+                            </SELECT>
+                            </p>
+                            <p>Email <span style="color: #FF0000">*</span><input type="text" name="Email" size="25"> Phone Number <span style="color: #FF0000">*</span><input type="text" name="phone" size="30"></p>
+                            <p> Address <span style="color: #FF0000">*</span><input type="text" name="Address" placeholder="Address" size="75"><br>
+                            </p>
+                            <p>City <span style="color: #FF0000">*</span><input type="text" name="City" placeholder="City" size="25/">
+                            </p>
+                            <p>Zip Code <span style="color: #FF0000">*</span><input type="text" name="Zipcode" placeholder="Zip Code" size="25/"> State <span style="color: #FF0000">*</span><input type="text" name="State" placeholder="State" size="25/"><br>                              
+                                 <p>Country
+                                <select name="Country">
+            <option value="">Select</option>
+            <option value="USA">United States</option>
+            <option value="Italy">Italy</option>
+            </select>
+        </p> 
+        <p>Username <span style="color: #FF0000">*</span><input type="text" name="FName" size="25"><p>
+        <p>Password <span style="color: #FF0000">*</span><input type="text" name="FName" size="25"><p></p>
+        <p>Role
+            <select name="Role">
+<option value="">Select</option>
+<option value="Admin">Admin</option>
+<option value="User">User</option>
+<option value="Viewer">Viewer</option>
+</select>
+</p> 
+
+                               <br> <p><input type="checkbox">By checking this box and signing below, you are confirming that all statements and answers provided on this job application are valid</p>
+
+                                <p>Please sign here</p>
+                                <span style="color: #FF0000">*</span><input type="text" name="Signature" placeholder="Student Signature" size="30">
+                                <span style="color: #FF0000">*</span><input type="text" name="Date" placeholder="Date" size="30"><br>
+                                <br>
+
+                                <input type="submit" name="submit " value="Submit Application " style="font-face: 'Comic Sans MS'; padding: 10px 10px; font-size: 12px; cursor: pointer; color: black; background-color: white ">
+
+                    </form>
+                    </table>
+
+                </div>
+
+                <footer>
+                    <center>
+                        <ol>
+                            <br><b>Marietta Campus</b>
+                            <br>100 South Marietta Pkwy
+                            <br>Marietta, GA 30060
+                            <br>Phone: 470-578-6000
+                        </ol>
+                        <center>
+                            
+    </div>
+    </center>
+    </footer>
+
+</html>
