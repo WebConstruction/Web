@@ -7,6 +7,12 @@ html, body {
   padding: 0;
 }
 
+img {
+  float:  left;
+  width:  100px;
+  height: 100px;
+}
+
 #container img {
     display: inline-block;
     margin: 10px;
